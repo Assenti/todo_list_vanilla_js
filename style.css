@@ -1,0 +1,94 @@
+* {
+    font-family: Arial, 'non-serif';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: cornflowerblue;
+}
+
+#app {
+    width: 500px;
+    margin: 20px auto;
+    height: calc(100vh - 40px);
+}
+
+#todo-form {
+    display: flex;
+    position: sticky;
+    top: 5px;
+    transition: all .4s ease-in;
+    background-color: white;
+}
+
+#todo-input {
+    outline: none;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid gray;
+    border-radius: 4px;
+    width: 100%;
+}
+
+#todo-input:focus {
+    border-color: cornflowerblue;
+    transition: all .2s ease-in-out;
+}
+
+#add-btn {
+    outline: none;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 4px;
+    min-width: 100px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+#delete-btn {
+    outline: none;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 4px;
+    min-width: 100px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: crimson;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    font-size: 1rem;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.delete-btn {
+    outline: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color:crimson;
+    color: white;
+}
